@@ -22,7 +22,7 @@
     byId('contact-email').href = `mailto:${contact.email}`;
     byId('contact-email').textContent = contact.email;
     byId('contact-links').innerHTML = contact.links.map((link) => `<a href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(link.label)} ↗</a>`).join('');
-    byId('footer-updated').textContent = `郭景涛 · 最后更新于 ${data.meta.lastUpdated}`;
+    byId('footer-updated').textContent = `吴承秘 · 最后更新于 ${data.meta.lastUpdated}`;
   }
 
   function renderResearch(areas) {
