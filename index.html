@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="郭景涛的学术个人主页：研究方向、教育背景、学术成果与联系方式。" />
+    <meta name="theme-color" content="#f6f4ef" />
+    <title>郭景涛｜学术主页</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = { theme: { extend: { fontFamily: { sans: ['Noto Sans SC', 'sans-serif'], serif: ['Noto Serif SC', 'serif'] } } } };
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script>
+      (() => {
+        const savedTheme = localStorage.getItem('academic-theme');
+        const theme = savedTheme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+  </head>
+  <body class="antialiased">
+    <a class="skip-link" href="#main-content">跳至主要内容</a>
+    <header class="site-header" id="top">
+      <div class="page-shell header-inner">
+        <a class="brand" href="#top" aria-label="返回页首"><span class="brand-mark">GJT</span><span class="brand-label">Academic Profile</span></a>
+        <button class="menu-button" id="menu-button" type="button" aria-controls="site-nav" aria-expanded="false">目录</button>
+        <nav class="site-nav" id="site-nav" aria-label="主导航">
+          <a href="#research">研究</a><a href="#education">教育</a><a href="#publications">成果</a><a href="#contact">联系</a>
+        </nav>
+        <button class="theme-button" id="theme-button" type="button" aria-label="切换深浅色模式"><span aria-hidden="true">◐</span><span class="theme-text">主题</span></button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero page-shell" aria-labelledby="profile-name">
+        <div class="hero-index" aria-hidden="true">01 — 学术档案</div>
+        <div class="hero-grid">
+          <div>
+            <p class="eyebrow" id="profile-affiliation">正在加载个人资料</p>
+            <h1 class="hero-name font-serif" id="profile-name">郭景涛</h1>
+            <p class="hero-title" id="profile-title"></p>
+          </div>
+          <div class="hero-statement">
+            <p id="profile-summary">页面正在从配置文件加载内容。</p>
+            <a class="arrow-link" href="#contact">建立学术联系 <span aria-hidden="true">↘</span></a>
+          </div>
+        </div>
+        <dl class="profile-facts" id="profile-facts"></dl>
+      </section>
+
+      <div class="page-shell content-layout">
+        <aside class="section-rail" aria-label="页面章节">
+          <p>CONTENTS</p><a href="#research">研究方向</a><a href="#education">教育背景</a><a href="#publications">学术成果</a><a href="#contact">联系方式</a>
+        </aside>
+        <div class="content-column">
+          <section class="content-section" id="research" aria-labelledby="research-title">
+            <div class="section-heading"><span>02</span><div><p class="eyebrow">RESEARCH</p><h2 class="font-serif" id="research-title">研究方向</h2></div></div>
+            <div class="research-list" id="research-list" aria-live="polite"></div>
+          </section>
+
+          <section class="content-section" id="education" aria-labelledby="education-title">
+            <div class="section-heading"><span>03</span><div><p class="eyebrow">EDUCATION</p><h2 class="font-serif" id="education-title">教育背景</h2></div></div>
+            <ol class="timeline" id="education-list" aria-live="polite"></ol>
+          </section>
+
+          <section class="content-section" id="publications" aria-labelledby="publications-title">
+            <div class="section-heading"><span>04</span><div><p class="eyebrow">SCHOLARSHIP</p><h2 class="font-serif" id="publications-title">学术成果</h2></div></div>
+            <div class="achievement-summary" id="achievement-summary"></div>
+            <div class="filter-bar" id="publication-filters" aria-label="论文分类筛选"></div>
+            <p class="result-count" id="publication-count" aria-live="polite"></p>
+            <div class="publication-list" id="publication-list"></div>
+            <div class="projects-block"><div class="subheading"><p class="eyebrow">SELECTED PROJECTS</p><h3 class="font-serif">参与项目</h3></div><div class="projects-grid" id="projects-list"></div></div>
+          </section>
+
+          <section class="content-section contact-section" id="contact" aria-labelledby="contact-title">
+            <div class="section-heading"><span>05</span><div><p class="eyebrow">CONTACT</p><h2 class="font-serif" id="contact-title">联系方式</h2></div></div>
+            <div class="contact-panel"><p>欢迎通过电子邮件交流研究议题、学术合作或专业事务。</p><a class="email-link" id="contact-email" href="#"></a><button class="copy-button" id="copy-email" type="button">复制邮箱</button><div class="contact-links" id="contact-links"></div></div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer"><div class="page-shell footer-inner"><p id="footer-updated">Academic profile</p><p><span id="visit-count">—</span> 次本地访问 <span class="footer-note">仅存储于当前浏览器</span></p><a href="#top">返回顶部 ↑</a></div></footer>
+    <template id="error-template"><p class="load-error">个人资料暂时无法加载。请确认 data/profile.json 文件存在且格式正确。</p></template>
+    <script src="assets/js/app.js" defer></script>
+  </body>
+</html>
