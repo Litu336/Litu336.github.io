@@ -1,18 +1,18 @@
 {
   "meta": {
-    "siteTitle": "郭景涛｜学术主页",
+    "siteTitle": "吴承秘｜学术主页",
     "lastUpdated": "2026-07-20",
     "fieldGuide": "本文件为个人资料唯一配置源。修改各字段后即可更新网页；数组条目将按当前顺序展示。"
   },
   "profile": {
-    "name": "郭景涛",
+    "name": "吴承秘",
     "englishName": "Jingtao Guo",
     "title": "研究生",
     "affiliation": "西南民族大学",
     "department": "计算机与人工智能学院 / 计算机技术",
     "location": "中国 · 成都",
     "summary": "关注计算方法与跨学科研究的交汇，致力于以严谨的分析框架回应真实世界中的复杂问题。",
-    "avatarAlt": "郭景涛的学术个人主页"
+    "avatarAlt": "吴承秘的学术个人主页"
   },
   "researchAreas": [
     {
@@ -45,7 +45,7 @@
       "category": "论文",
       "year": "2026",
       "title": "请在此填写论文题目",
-      "authors": "郭景涛，合作者",
+      "authors": "吴承秘，合作者",
       "venue": "期刊或会议名称",
       "status": "准备中",
       "link": ""
@@ -54,7 +54,7 @@
       "category": "会议",
       "year": "2025",
       "title": "请在此填写会议论文或报告题目",
-      "authors": "郭景涛",
+      "authors": "吴承秘",
       "venue": "会议或学术活动名称",
       "status": "已展示",
       "link": ""
@@ -63,7 +63,7 @@
       "category": "预印本",
       "year": "2025",
       "title": "请在此填写预印本题目",
-      "authors": "郭景涛，合作者",
+      "authors": "吴承秘，合作者",
       "venue": "预印本平台",
       "status": "草稿",
       "link": ""
@@ -86,7 +86,7 @@
     }
   ],
   "contact": {
-    "email": "250854042022@stu.swun.edu.cn",
+    "email": "250854042027@stu.swun.edu.cn",
     "links": [
       { "label": "GitHub", "url": "https://github.com/" },
       { "label": "ORCID", "url": "https://orcid.org/" },
